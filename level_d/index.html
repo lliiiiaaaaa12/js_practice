@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уровень D — Мини-проекты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #00000015;
+        }
+        h1, h2 { color: #222; }
+        button, select, input {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 15px;
+        }
+        button {
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background: #555; }
+        input, select { max-width: 100%; }
+        .result {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+        .question { margin: 12px 0; }
+        a { color: #222; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Уровень D — мини-проекты №231–235</h1>
+    <p><a href="../index.html">Вернуться на главную</a></p>
+    <section class="card">
+        <h2>Задание 231. Тестирование знаний</h2>
+        <div id="quiz"></div>
+        <button id="finishQuiz">Завершить тест</button>
+        <p id="quizResult" class="result">Выбери ответы и заверши тест.</p>
+    </section>
+    <section class="card">
+        <h2>Задание 232. Заявки на оборудование</h2>
+        <input id="requestName" placeholder="Название оборудования">
+        <input id="requestStudent" placeholder="Имя студента">
+        <button id="addRequest">Добавить заявку</button>
+        <ul id="requests"></ul>
+    </section>
+    <section class="card">
+        <h2>Задание 233. Статистика студентов</h2>
+        <button id="showStats">Показать статистику</button>
+        <div id="stats" class="result"></div>
+    </section>
+    <section class="card">
+        <h2>Задание 234. Чат-бот</h2>
+        <input id="chatInput" placeholder="Напиши сообщение">
+        <button id="sendChat">Отправить</button>
+        <div id="chatOutput" class="result">Бот: Привет! Задай вопрос.</div>
+    </section>
+    <section class="card">
+        <h2>Задание 235. Менеджер лаборатории</h2>
+        <input id="equipmentName" placeholder="Название оборудования">
+        <select id="equipmentStatus">
+            <option value="Доступно">Доступно</option>
+            <option value="Выдано">Выдано</option>
+            <option value="На ремонте">На ремонте</option>
+        </select>
+        <button id="addEquipment">Добавить оборудование</button>
+        <select id="statusFilter">
+            <option value="Все">Все статусы</option>
+            <option value="Доступно">Доступно</option>
+            <option value="Выдано">Выдано</option>
+            <option value="На ремонте">На ремонте</option>
+        </select>
+        <button id="exportCSV">Экспорт CSV</button>
+        <ul id="equipmentList"></ul>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
